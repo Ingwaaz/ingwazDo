@@ -4,11 +4,11 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import * as serviceWorker from './serviceWorker';
 
-import Authorization from './pages/authorization';
+import Main from './main';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Authorization />
+    <Main />
   </React.StrictMode>,
   document.getElementById('root')
 );

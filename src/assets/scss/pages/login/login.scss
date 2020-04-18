@@ -1,0 +1,30 @@
+@import '../fonts.scss';
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./Background.png');
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+  &__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    font-family: "Roboto B", sans-serif;
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer;
+
+    & strong {
+      color: #EB5757;
+    }
+  }
+}
