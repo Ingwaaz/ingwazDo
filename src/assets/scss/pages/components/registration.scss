@@ -1,0 +1,69 @@
+@import '../fonts.scss';
+
+form {
+  width: 100%;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  background-color: #fff;
+  border-radius: 8px;
+  color: black;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font-family: "Roboto B", sans-serif;
+    font-size: 28px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px 8px 0px 0px;
+
+    & strong {
+      color: #EB5757;
+    }
+  }
+
+  &__fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-family: "Roboto M", sans-serif;
+    font-size: 18px;
+
+    &__name, &__second_name, &__email, &__password, &__confirm_password {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      padding: 20px 0px;
+      transition: .3s;
+
+      &.active {
+        padding-top: 10px;
+        transition: .3s;
+        width: 430px;
+      }
+
+      & input {
+        width: 275px;
+        height: 20px;
+        border: 0;
+        border-bottom: 1px solid #000;
+        outline: 0;
+        font-family: 'Roboto R', sans-serif;
+        font-size: 16px;
+        background: transparent;
+      };
+    }
+  }
+}
